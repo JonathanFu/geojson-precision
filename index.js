@@ -22,7 +22,7 @@
 
     function geometry(obj) {
       if (!obj) {
-        return {};
+        return obj;
       }
       
       switch (obj.type) {
@@ -44,7 +44,7 @@
           obj.geometries = obj.geometries.map(geometry);
           return obj;
         default :
-          return {};
+          return obj;
       }
     }
 
